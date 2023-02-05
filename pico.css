@@ -2657,4 +2657,29 @@ textarea,
   }
 }
 
+.custom-profile-image{
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-profile-image {
+    width: 220px;
+    height: 220px;
+    margin:auto;
+  }
+}
+
+.custom-main-h1{
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-main-h1 {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=pico.css.map */
