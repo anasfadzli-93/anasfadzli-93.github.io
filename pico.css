@@ -146,27 +146,22 @@ h6 {
 
 h1 {
   --font-size: 2rem;
-  --typography-spacing-vertical: 3rem;
 }
 
 h2 {
   --font-size: 1.75rem;
-  --typography-spacing-vertical: 2.625rem;
 }
 
 h3 {
   --font-size: 1.5rem;
-  --typography-spacing-vertical: 2.25rem;
 }
 
 h4 {
   --font-size: 1.25rem;
-  --typography-spacing-vertical: 1.874rem;
 }
 
 h5 {
   --font-size: 1.125rem;
-  --typography-spacing-vertical: 1.6875rem;
 }
 
 [type=checkbox],
@@ -757,8 +752,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: var(--typography-spacing-vertical);
   color: var(--color);
   font-weight: var(--font-weight);
   font-size: var(--font-size);
@@ -789,18 +782,6 @@ h6 {
   --color: var(--h6-color);
 }
 
-:where(address, blockquote, dl, figure, form, ol, p, pre, table, ul) ~ :is(h1, h2, h3, h4, h5, h6) {
-  margin-top: var(--typography-spacing-vertical);
-}
-
-hgroup,
-.headings {
-  margin-bottom: var(--typography-spacing-vertical);
-}
-hgroup > *,
-.headings > * {
-  margin-bottom: 0;
-}
 hgroup > *:last-child,
 .headings > *:last-child {
   --color: var(--muted-color);
@@ -2658,27 +2639,61 @@ textarea,
 }
 
 .custom-profile-image{
-  width: 350px;
-  height: 350px;
+  width: 290px;
+  height: 290px;
   border-radius: 100%;
   margin-left: auto;
+  margin-right:25px;
 }
 
 @media screen and (max-width: 992px) {
   .custom-profile-image {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin:auto;
   }
 }
 
 .custom-main-h1{
   text-align: left;
+  margin:0px;
 }
 
 @media screen and (max-width: 992px) {
   .custom-main-h1 {
     text-align: center;
+    
+  }
+}
+
+.custom-main-h4{
+  text-align: left;
+  margin:0px;
+  max-width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-main-h4 {
+    text-align: center;
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.custom-div-vertical-align{
+  align-items: center;
+}
+
+.custom-div-left-margin{
+  margin-left:45px;
+  margin-top:0px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-div-left-margin {
+    margin-left:0px;
+    margin-top:20px;
   }
 }
 
