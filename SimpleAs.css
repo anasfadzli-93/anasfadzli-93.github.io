@@ -1,0 +1,176 @@
+
+body{
+  background-color:rgb(10, 26, 39);
+  color:rgb(235, 235, 235);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  margin: 0;
+  font-size: 42px;
+  font-weight:700;
+}
+
+p{
+  color: white;
+  margin: 0;
+  font-size:20px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 992px) {
+  .flex {
+    flex-direction: column;
+    margin:auto;
+  }
+}
+
+.profile-image{
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.mt25{
+  margin-top: 25px;
+}
+
+.mt50{
+  margin-top: 50px;
+}
+
+.mt100{
+  margin-top: 105px;
+}
+
+.ml25{
+  margin-left: 25px;
+}
+
+.ml50{
+  margin-left: 50px;
+}
+
+.ml100{
+  margin-left: 105px;
+}
+
+.mw550{
+  max-width: 550px;
+}
+
+.shape-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(259% + 1.3px);
+  height: 650px;
+}
+
+.shape-divider-top .shape-fill {
+  fill: #FF4500;
+}
+
+/**.custom-profile-image{
+  width: 290px;
+  height: 290px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right:25px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-profile-image {
+    width: 200px;
+    height: 200px;
+    margin:auto;
+  }
+}
+
+.custom-main-h1{
+  text-align: left;
+  margin:0px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-main-h1 {
+    text-align: center;
+    
+  }
+}
+
+.custom-main-h4{
+  text-align: left;
+  margin:0px;
+  max-width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-main-h4 {
+    text-align: center;
+    max-width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.custom-div-vertical-align{
+  align-items: center;
+}
+
+.custom-div-left-margin{
+  margin-left:45px;
+  margin-top:0px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-div-left-margin {
+    margin-left:0px;
+    margin-top:20px;
+  }
+}
+
+.custom-button{
+  width: 105px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-button {
+    width: 105px;
+  }
+}
+
+.custom-div-buttons{
+  margin:0px;
+  width: 105px;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-div-buttons {
+    margin:0px;
+  }
+}
+
+**/
