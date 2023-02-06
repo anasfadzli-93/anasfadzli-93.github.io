@@ -44,6 +44,17 @@ p{
   }
 }
 
+.hero-text{
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-text {
+    margin: auto;
+    padding: 25px;
+  }
+}
+
 .mt25{
   margin-top: 25px;
 }
@@ -72,6 +83,8 @@ p{
   max-width: 550px;
 }
 
+
+
 .shape-divider-top {
   position: absolute;
   top: 0;
@@ -85,12 +98,19 @@ p{
 .shape-divider-top svg {
   position: relative;
   display: block;
-  width: calc(259% + 1.3px);
-  height: 650px;
+  width: 2100%;
+  height: 1465px;
 }
 
 .shape-divider-top .shape-fill {
   fill: #FF4500;
+}
+
+@media screen and (max-width: 992px) {
+  .shape-divider-top svg{
+    width: calc(259% + 1.3px);
+    height: 650px;
+  }
 }
 
 /**.custom-profile-image{
