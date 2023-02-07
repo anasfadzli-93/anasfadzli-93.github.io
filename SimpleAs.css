@@ -5,19 +5,15 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-  margin: 0;
-  font-size: 32px;
-  font-weight:700;
-}
-
-p{
-  color: rgb(207, 209, 223);
-  margin: 0;
-  font-size:18px;
-}
-
 .flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 650px;
+}
+
+.profile-flex{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,34 +21,88 @@ p{
 }
 
 @media screen and (max-width: 992px) {
-  .flex {
+  .profile-flex {
     flex-direction: column;
     margin:auto;
   }
 }
 
+.flex-align-left{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.border{
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 2px;
+}
+
+.bordersubtle{
+  border-color: rgb(39, 64, 85);
+}
+
 .profile-image{
-  width: 240px;
-  height: 240px;
+  width: 140px;
+  height: 140px;
   border-radius: 100%;
+  margin-right:12.5px;
 }
 
 @media screen and (max-width: 992px) {
   .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
+    margin-right:0px;
   }
 }
 
-.hero-text{
-  margin-left: 50px;
+.profile-text{
+  margin-top: 0px;
+  margin-left:12.5px;
 }
 
 @media screen and (max-width: 992px) {
-  .hero-text {
-    margin: auto;
-    padding: 25px;
+  .profile-text {
+    margin-left:0px;
+    margin-top: 25px;
   }
+}
+
+.profile-h1{
+  margin: 0;
+  font-size: 22px;
+  font-weight:700;
+}
+
+.profile-p{
+  color: rgb(207, 209, 223);
+  margin: 0;
+  font-size:16px;
+}
+
+@media screen and (max-width: 992px) {
+  .profile-p, .profile-h1 {
+    text-align: center;
+  }
+}
+
+.pa8{
+  padding:8px;
+}
+
+.pa25{
+  padding:25px;
+}
+
+.ma5{
+  margin:5px;
+}
+
+.ma25{
+  margin:25px;
 }
 
 .mt25{
@@ -79,6 +129,6 @@ p{
   margin-left: 105px;
 }
 
-.mw450{
-  max-width: 450px;
+.mw350{
+  max-width: 350px;
 }
