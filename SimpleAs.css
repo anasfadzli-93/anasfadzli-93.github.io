@@ -53,7 +53,7 @@ p{
 
 @media screen and (max-width: 600px) {
   .profile-text {
-    margin-top: 55px;
+    margin-top: 50px;
     margin-left: 0px;
   }
 }
@@ -83,52 +83,68 @@ p{
   justify-content: center;
 }
 
-.line-animation-1{
-  margin-top: 80px;
+.line-animation{
+  visibility: hidden;
+  margin-top: 85px;
   height: 3px;
-  width: 100%;
+  width: 552px;
   position: absolute;
-  background-color: rgb(255, 240, 25);
-  z-index: -3;
-  animation: smoothexpand2 1.25s both;
   transform-origin: 0%;
 }
 
+@media screen and (max-width: 600px) {
+  .line-animation {
+    visibility: visible;
+    margin-left:0%;
+    margin-top: 95px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    transform-origin: 0%;
+  }
+}
+
+.line-animation-1{
+  background-color: rgb(255, 240, 25);
+  z-index: -3;
+  animation: smoothexpand2 1.25s both;
+}
+
 .line-animation-2{
-  margin-top: 80px;
-  height: 3px;
-  width: 100%;
-  position: absolute;
   background-color: rgba(26, 99, 255,1);
   z-index: -2;
   animation: smoothexpand3 1.25s both;
-  transform-origin: 0%;
   animation-delay: 0.25s;
 }
 
 .line-animation-3{
-  margin-top: 80px;
-  height: 3px;
-  width: 100%;
-  position: absolute;
   background-color: rgb(255, 72, 40);
   z-index: -1;
   animation: smoothexpand4 1.45s both;
-  transform-origin: 0%;
-  transform-origin: left;
   animation-delay: 0.45s;
 }
 
 .line-animation-4{
-  margin-top: 80px;
-  height: 3px;
-  width: 100%;
-  position: absolute;
   background-color: rgb(34, 48, 61);
   z-index: -1;
   animation: smoothexpand5 1.95s both;
-  transform-origin: left;
   animation-delay: 0.65s;
+}
+
+.circle-animation{
+  margin-top: -2px;
+  margin-left: -25px;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: rgb(34, 48, 61);
+  z-index: -1;
+  /**animation: smoothexpand 1.95s both;**/
+  transform-origin: left;
+  
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -155,17 +171,17 @@ p{
 
 @keyframes smoothexpand3{
   from{transform:scale(0,1);}
-  to{transform:scale(100%,1);}
+  to{transform:scale(99%,1);}
 }
 
 @keyframes smoothexpand4{
   from{transform:scale(0,1);}
-  to{transform:scale(100%,1);}
+  to{transform:scale(98%,1);}
 }
 
 @keyframes smoothexpand5{
   from{transform:scale(0,1);}
-  to{transform:scale(100%,1);}
+  to{transform:scale(97%,1);}
 }
 
 @media screen and (max-width: 600px) {
