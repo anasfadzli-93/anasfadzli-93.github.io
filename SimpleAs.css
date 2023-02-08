@@ -85,7 +85,7 @@ p{
 
 .line-animation{
   margin-left: 0px;
-  margin-top: -158px;
+  margin-top: -160px;
   height:195px;
   width: 100%;
   position: absolute;
@@ -113,23 +113,23 @@ p{
   .line-animation-1 {
     background-color: rgb(90, 47, 245);
     z-index: -3;
-    animation: smoothexpand 1.25s both;
+    animation: smoothexpand 0.25s both;
   }
 }
 
 .line-animation-2{
-  background-color: rgb(243, 245, 248);
+  background-color: rgb(14, 36, 54);
   z-index: -2;
   animation: smoothexpand2 1.25s both;
-  animation-delay: 0.25s;
+  animation-delay: 0.35s;
 }
 
 @media screen and (max-width: 600px) {
   .line-animation-2 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(14, 36, 54);
     z-index: -2;
     animation: smoothexpand2 1.25s both;
-    animation-delay: 0.25s;
+    animation-delay: 0.35s;
   }
 }
 
