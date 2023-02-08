@@ -7,11 +7,11 @@ body{
   /**margin:75px 15px 75px 15px;**/
 }
 
-p, h1 {
+p, h1, h4 {
   margin: 0px;
 }
 
-p{
+p, h4{
   color:rgb(184, 188, 202);
 }
 
@@ -153,6 +153,33 @@ p{
 @keyframes smoothexpand2{
   from{transform:scale(0,1);}
   to{transform:scale(1,1);}
+}
+
+.portfolio-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-container > div{
+  width: 100%;
+  max-width: 1280px;
+  padding: 25px;
+}
+
+.portfolio-container > div > h4{ 
+  margin-bottom: 25px;
+}
+
+.portfolio-container > div > div > p{ 
+  margin-bottom: 8px;
+}
+
+iframe{
+  width: 38%;
+  height: 250px;
+  min-width: 350px;
 }
 
 
