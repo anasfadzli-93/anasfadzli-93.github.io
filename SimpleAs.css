@@ -3,7 +3,8 @@ body{
   background-color:rgb(10, 26, 39);
   color:rgb(235, 235, 235);
   font-family: 'Montserrat', sans-serif;
-  margin:75px 15px 75px 15px;
+  margin:0px;
+  /**margin:75px 15px 75px 15px;**/
 }
 
 p, h1 {
@@ -21,10 +22,22 @@ p{
 
 .profile-image{
   width: 145px;
+  padding:8px;
   border-radius: 100%;
-  margin-right: 14.5px;
-  animation: smoothfadein 1.25s;
+  margin-right: 0px;
+  animation: smoothfadein 1.25s both;
   animation-timing-function: cubic-bezier(.28,.55,.39,1);
+}
+
+.profile-image-background{
+  background-color: rgb(19, 43, 63);
+  border-radius: 100%;
+  animation: smoothexpand 1.25s both;
+  animation-timing-function: cubic-bezier(.28,.55,.39,1);
+  position: absolute;
+  width: 161px;
+  height: 161px;
+  animation-delay: 0.45s;
 }
 
 @media screen and (max-width: 600px) {
@@ -35,32 +48,32 @@ p{
 
 .profile-text{
   margin-top: 0px;
-  margin-left: 14.5px;
+  margin-left: 35.5px;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-text {
+    margin-top: 55px;
+    margin-left: 0px;
+  }
 }
 
 .profile-text-1{
-  animation: smoothfadein 1.25s;
+  animation: smoothfadein 1.25s both;
   animation-timing-function: cubic-bezier(.28,.55,.39,1);
   animation-delay: 0.1s;
 }
 
 .profile-text-2{
-  animation: smoothfadein 1.25s;
+  animation: smoothfadein 1.25s both;
   animation-timing-function: cubic-bezier(.28,.55,.39,1);
   animation-delay: 0.18s;
 }
 
 .profile-text-3{
-  animation: smoothfadein 1.25s;
+  animation: smoothfadein 1.25s both;
   animation-timing-function: cubic-bezier(.28,.55,.39,1);
   animation-delay: 0.25s;
-}
-
-@media screen and (max-width: 600px) {
-  .profile-text {
-    margin-top: 25px;
-    margin-left: 0px;
-  }
 }
 
 .div-container{
@@ -68,6 +81,16 @@ p{
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.line-animation-1{
+  margin-top: 85px;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.247);
+  z-index: -1;
+  animation: smoothexpand 1.25s both;
 }
 
 @media screen and (max-width: 600px) {
@@ -81,3 +104,15 @@ p{
   from{transform:translate(0px,20px);opacity: 0;}
   to{transform:translate(0px,0px);opacity:1;}
 }
+
+@keyframes smoothexpand{
+  from{transform:scale(0);}
+  to{transform:scale(1);}
+}
+
+@keyframes lineexpand{
+  from{transform:scale(0);}
+  to{transform:scale(1);}
+}
+
+
