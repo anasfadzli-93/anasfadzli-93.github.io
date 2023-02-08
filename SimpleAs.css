@@ -84,17 +84,16 @@ p{
 }
 
 .line-animation{
-  visibility: hidden;
-  margin-top: 85px;
-  height: 3px;
-  width: 552px;
+  margin-left: 0px;
+  margin-top: -158px;
+  height:195px;
+  width: 100%;
   position: absolute;
   transform-origin: 0%;
 }
 
 @media screen and (max-width: 600px) {
   .line-animation {
-    visibility: visible;
     margin-left:0%;
     margin-top: 95px;
     height: 2px;
@@ -105,46 +104,33 @@ p{
 }
 
 .line-animation-1{
-  background-color: rgb(255, 240, 25);
+  background-color: rgb(90, 47, 245);
   z-index: -3;
-  animation: smoothexpand2 1.25s both;
+  animation: smoothexpand 1.25s both;
+}
+
+@media screen and (max-width: 600px) {
+  .line-animation-1 {
+    background-color: rgb(90, 47, 245);
+    z-index: -3;
+    animation: smoothexpand 1.25s both;
+  }
 }
 
 .line-animation-2{
-  background-color: rgba(26, 99, 255,1);
+  background-color: rgb(243, 245, 248);
   z-index: -2;
-  animation: smoothexpand3 1.25s both;
+  animation: smoothexpand2 1.25s both;
   animation-delay: 0.25s;
 }
 
-.line-animation-3{
-  background-color: rgb(255, 72, 40);
-  z-index: -1;
-  animation: smoothexpand4 1.45s both;
-  animation-delay: 0.45s;
-}
-
-.line-animation-4{
-  background-color: rgb(34, 48, 61);
-  z-index: -1;
-  animation: smoothexpand5 1.95s both;
-  animation-delay: 0.65s;
-}
-
-.circle-animation{
-  margin-top: -2px;
-  margin-left: -25px;
-  border-radius: 100%;
-  height: 15px;
-  width: 15px;
-  transform: rotate(45deg);
-  position: absolute;
-  background-color: rgb(34, 48, 61);
-  z-index: -1;
-  /**animation: smoothexpand 1.95s both;**/
-  transform-origin: left;
-  
-  
+@media screen and (max-width: 600px) {
+  .line-animation-2 {
+    background-color: rgb(255, 255, 255);
+    z-index: -2;
+    animation: smoothexpand2 1.25s both;
+    animation-delay: 0.25s;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -160,50 +146,13 @@ p{
 }
 
 @keyframes smoothexpand{
-  from{transform:scale(0);}
-  to{transform:scale(1);}
+  from{transform:scale(0,1);}
+  to{transform:scale(1,1);}
 }
 
 @keyframes smoothexpand2{
   from{transform:scale(0,1);}
-  to{transform:scale(100%,1);}
-}
-
-@keyframes smoothexpand3{
-  from{transform:scale(0,1);}
-  to{transform:scale(99%,1);}
-}
-
-@keyframes smoothexpand4{
-  from{transform:scale(0,1);}
-  to{transform:scale(98%,1);}
-}
-
-@keyframes smoothexpand5{
-  from{transform:scale(0,1);}
-  to{transform:scale(97%,1);}
-}
-
-@media screen and (max-width: 600px) {
-  @keyframes smoothexpand2{
-    from{transform:scale(0,1);}
-    to{transform:scale(100%,1);}
-  }
-  
-  @keyframes smoothexpand3{
-    from{transform:scale(0,1);}
-    to{transform:scale(98%,1);}
-  }
-  
-  @keyframes smoothexpand4{
-    from{transform:scale(0,1);}
-    to{transform:scale(96%,1);}
-  }
-  
-  @keyframes smoothexpand5{
-    from{transform:scale(0,1);}
-    to{transform:scale(94%,1);}
-  }
+  to{transform:scale(1,1);}
 }
 
 
